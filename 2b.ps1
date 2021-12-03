@@ -9,6 +9,7 @@ foreach ($command in $commands) {
     switch ($action) {
         'forward' {
             $horiz += $qty
+            $depth += ($aim * $qty)
         }
         'down' {$aim += $qty}
         'up' {$aim -= $qty}
